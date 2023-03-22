@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js " defer></script>
+</head>
+<body>
+    <div class="main_div">
+        <div class="music_container">
+            <h2 id="title">1st song</h2>
+            <h3 id="artist">Artist name</h3>
+            <div class="img_container">
+                <img src="pictures/music_Faded.jpg" alt="error">
+            </div>
+            <audio src="music/music_Faded.mp3"></audio>
+            <!--progress bar-->
+            <div class="progress_container">
+                <div>
+                    <h3 id="start">00.00</h3>
+                    <h3 id="end">2:13</h3>
+                </div>
+                <input type="range" class="progress_bar" id="progress_bar">
+                
+            </div>
+            <!--controls-->
+            <div class="music_controls">
+                <i class="fa-solid fa-backward-step" id="previous" title="previous"></i>
+                <i class="fa-solid fa-play main_button" id="play" title="play"></i>
+                <i class="fa-solid fa-forward-step"  id="next" title="next"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

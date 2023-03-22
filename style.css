@@ -1,0 +1,114 @@
+
+/* by default browser take 8px margin same with pseudo element and pseudo class*/
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    /*font-family: sans-serif;*/
+    box-sizing: border-box;
+}
+/*1rem = 10px  */
+html{
+    font-size: 62.5%; /* by default 100% ok i.e 16px here it convert into 10px*/
+    font-family:sans-serif;
+}
+
+.main_div{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: grid;
+    place-items: center;
+}
+.music_container{
+    width: 35rem;
+    height: 55rem;
+    background-color:rgb(127, 134, 127);
+    border-radius: 2rem;
+    box-shadow: 0 1.2rem 5rem 0.8rem pink;
+    padding: 3rem; /* squeezing content of div from all side*/
+    text-align: center;
+}
+
+.music_container #title{
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.5rem;
+  color: black;
+  margin: 2rem 0 0.5rem 0;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-shadow: 0 0.3rem 0.5rem rgb(42, 30, 30);
+}
+.music_container #artist{
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    font-weight: 300;
+}
+.img_container{
+    width: 25rem;
+    height: 25rem;
+    margin: auto;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgb(27, 25, 25);
+}
+.music_controls{
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0rem auto;
+}
+.music_controls .fa-solid{
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 3rem;
+    filter: drop-shadow(0 1.2rem 3rem 0.5rem black);
+}
+.music_controls .main_button{
+    background-color: black;
+    color: aliceblue;
+    border-radius: 70%;
+    height: 5rem;
+    width: 4rem;
+    font-size: 1.4rem;
+    /*add display flex to center the icons*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.music_controls .fa-solid:hover{
+    color: rgb(169, 92, 92);
+}
+.music_controls .main_button:hover{
+    background-color: aliceblue;
+    color: black;
+    box-shadow: 0 1rem 2rem 0.2rem rgb(169, 92, 92);
+}
+
+.progress_container{
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.5rem;
+}
+.progress_container .progress_bar{
+    width: 27rem;
+    object-fit: cover;
+    color: rgb(127, 134, 127);
+    cursor: pointer;
+}
+.progress_container div{
+    display: flex;
+    justify-content: space-between;
+}
